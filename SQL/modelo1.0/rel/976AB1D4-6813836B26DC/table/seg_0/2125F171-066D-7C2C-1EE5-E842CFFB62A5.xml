@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2125F171-066D-7C2C-1EE5-E842CFFB62A5" name="MESSAGES">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<importedID>705B41E8-0166-1652-2DD1-235B8C72856F</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="message_id" id="DB720D2D-84AE-C2C6-43DA-B47229E45094">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="chat_id" id="6A2DCFE9-AB15-9075-8F69-73E2FD860BD4">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA5B1F5B-C85B-6D86-8D88-7EAA940A98BD" referredColumn="01873D4D-C4B4-B271-A202-849DE3894D98"/>
+</associations>
+</Column>
+<Column name="user_id" id="AD50375F-D33D-3F8A-4349-67B1DCE13298">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3078E429-54EB-E52F-146B-C612F2EBCF02" referredColumn="3A17E2D0-404D-DB2F-4538-12340E4DB243"/>
+</associations>
+</Column>
+<Column name="text" id="FEDF27C9-B97E-8927-FA2A-522C6B78E978">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 CHAR</dataTypeSize>
+<ownDataTypeParameters>4000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="time" id="4101EF9B-D7D4-4EA7-3136-8B55779C1D80">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="url_file" id="5AC3A143-5640-9D4A-204D-1F512D353CA6">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:17:23 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="693215EF-5AD0-8842-0072-BF5F12BA43B4" name="MESSAGES_PK">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB720D2D-84AE-C2C6-43DA-B47229E45094"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7FC979E4-9CBC-85EA-2B05-19997683E303" name="MESSAGES_USERS_FK">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD50375F-D33D-3F8A-4349-67B1DCE13298"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4DF09547-8754-4CF9-6B0F-1D394A615872" name="MESSAGES_CHATS_FK">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A2DCFE9-AB15-9075-8F69-73E2FD860BD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modelo1.0" id="FEC4E897-C9E5-2FB4-9611-58C9AA823743" version="3.5">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:08:51 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>FEC4E897-C9E5-2FB4-9611-58C9AA823743</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="4C7EF9E3-0705-7A63-E6B2-F40852D490A9">
+<designStoragePath>/home/seed/Documentos/ptoyectoBasesDos/chatBasesDos/SQL/modelado</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="6156BD3F-2D2F-95A9-C2B7-1B554BD6DFF1">
+<designStoragePath>/home/seed/Documentos/ptoyectoBasesDos/chatBasesDos/SQL/modelo1.0</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BA127629-DB55-6364-E04D-9DF09C71DC1E" name="U_FRIENDS">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<importedID>2B419E2D-2656-37E6-F9F4-F01FB8C22223</importedID>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user" id="F330770D-EB3E-52B2-11BE-E1AA81C04687">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<importedID>DBFE611C-D67A-19BB-2E5E-0A571DB055BB</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B542E5F3-EF49-5788-9014-FC381B292B4E" referredColumn="3A17E2D0-404D-DB2F-4538-12340E4DB243"/>
+</associations>
+</Column>
+<Column name="user_added" id="19FE6DD9-4089-2352-4D4B-8A54455F5A99">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<importedID>F3763181-442B-1971-D544-05F841789ECF</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="10FE70F6-3DF0-0DE9-A4F1-65B28739AAEF" referredColumn="3A17E2D0-404D-DB2F-4538-12340E4DB243"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A40B8564-20A5-4622-D269-299AF3A9B51D" name="U_FRIENDS_PK">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<importedID>5E06CC64-A00E-EC57-344B-E48961C40661</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F330770D-EB3E-52B2-11BE-E1AA81C04687"/>
+<colUsage columnID="19FE6DD9-4089-2352-4D4B-8A54455F5A99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="713A72F2-93FF-80DA-8C31-FB1B1D928856" name="agrega">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F330770D-EB3E-52B2-11BE-E1AA81C04687"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="168A913D-59E4-5D4F-1FC4-EC94DAFD2E1A" name="agregado">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19FE6DD9-4089-2352-4D4B-8A54455F5A99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

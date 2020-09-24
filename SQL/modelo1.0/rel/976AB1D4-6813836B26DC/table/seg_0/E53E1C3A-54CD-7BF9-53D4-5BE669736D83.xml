@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E53E1C3A-54CD-7BF9-53D4-5BE669736D83" name="CHATS">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<importedID>2957FEEA-92C8-293A-F1B0-25115715C615</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="chat_id" id="01873D4D-C4B4-B271-A202-849DE3894D98">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<importedID>E10486DE-4E7F-3D3E-F1B0-2AC9AD491C6D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="state_id" id="DA7F715B-7C2A-11F3-79ED-F91FF5EAC0AE">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<importedID>35C7B4EF-7C96-ACE9-742F-EF24FA654E0E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4CAA7673-4634-323A-61E1-080D1F55AD32" referredColumn="EEAECFE2-C9D4-5D4E-6C01-8E02F5CD1185"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1C8D4E26-FE63-F7A6-7DC1-0BB07EC040D8" name="CHATS_PK">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<importedID>B035F11D-1C8D-D785-583D-99C780B08E3B</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01873D4D-C4B4-B271-A202-849DE3894D98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="995AAEEE-A292-4A1B-30AE-655195FE1C93" name="tipo">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA7F715B-7C2A-11F3-79ED-F91FF5EAC0AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

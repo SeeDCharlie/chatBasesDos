@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3F5725B3-44A7-2DF8-40C7-015D13D08841" name="CHAT_USERS">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<importedID>34472D0B-DBC4-56A7-6131-B9F96AFDBFAA</importedID>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="B0D23EB7-82AE-60CB-514D-727224E6FC30">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<importedID>2AEA3672-324E-A702-02DE-E697B52A348B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="747B99F0-9A12-4F4E-E782-90F5A144EB89" referredColumn="3A17E2D0-404D-DB2F-4538-12340E4DB243"/>
+</associations>
+</Column>
+<Column name="chat_id" id="1D6696B0-94D6-6A2D-8338-2EC69356B52A">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<importedID>85527D64-78F4-A3D5-2929-A71578919073</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2412B778-502F-B21B-E013-F98BC263B4B1" referredColumn="01873D4D-C4B4-B271-A202-849DE3894D98"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9786EB59-8DBA-6E01-0EDF-FFF00455382D" name="chat">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1D6696B0-94D6-6A2D-8338-2EC69356B52A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1511DC99-B836-FB93-4155-4B75185DA23A" name="user">
+<createdBy>seed</createdBy>
+<createdTime>2020-09-24 03:09:16 UTC</createdTime>
+<ownerDesignName>modelo1.0</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0D23EB7-82AE-60CB-514D-727224E6FC30"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
