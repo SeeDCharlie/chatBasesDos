@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DBFDE830-D22A-90C2-E17B-A903A4C262A4" name="CHAT_USERS">
+<createdBy>Usuario</createdBy>
+<createdTime>2020-09-21 23:21:19 UTC</createdTime>
+<ownerDesignName>modelado</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="651B2C07-FFFF-1CB9-092A-9A99199B34F3">
+<createdBy>Usuario</createdBy>
+<createdTime>2020-09-22 00:08:51 UTC</createdTime>
+<ownerDesignName>modelado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FC04492E-1669-B307-E6BD-0DDC71D34EEB" referredColumn="58F8D391-B972-DA95-0BA7-67A87C20B830"/>
+</associations>
+</Column>
+<Column name="chat_id" id="14F12624-C683-E238-DCAA-3B32EE79A1BC">
+<createdBy>Usuario</createdBy>
+<createdTime>2020-09-22 00:09:07 UTC</createdTime>
+<ownerDesignName>modelado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="655B7CEE-6264-4B0A-B460-4F36E9CF4569" referredColumn="0FFF66ED-81C4-82CF-2FB6-F9BA2547FFAB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="01870AF1-B188-2270-E1BE-3C77BDF5D28E" name="user">
+<createdBy>Usuario</createdBy>
+<createdTime>2020-09-22 00:08:51 UTC</createdTime>
+<ownerDesignName>modelado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="651B2C07-FFFF-1CB9-092A-9A99199B34F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="20B7B77C-C4F9-5677-10D3-4D90C49E6615" name="chat">
+<createdBy>Usuario</createdBy>
+<createdTime>2020-09-22 00:09:07 UTC</createdTime>
+<ownerDesignName>modelado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14F12624-C683-E238-DCAA-3B32EE79A1BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

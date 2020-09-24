@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4DF8E11A-4222-A4A2-7E03-4B04A5C4F567" name="U_FRIENDS">
+<createdBy>Usuario</createdBy>
+<createdTime>2020-09-21 23:28:33 UTC</createdTime>
+<ownerDesignName>modelado</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user" id="1DF8E310-C25B-E220-69DA-B8036125E2E7">
+<createdBy>Usuario</createdBy>
+<createdTime>2020-09-21 23:54:14 UTC</createdTime>
+<ownerDesignName>modelado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F5B9895-E7B5-6313-29BD-015ABF25537F" referredColumn="58F8D391-B972-DA95-0BA7-67A87C20B830"/>
+</associations>
+</Column>
+<Column name="user_added" id="8D62BAFA-E3AF-E9D0-7215-6DA34676D2A9">
+<createdBy>Usuario</createdBy>
+<createdTime>2020-09-21 23:54:53 UTC</createdTime>
+<ownerDesignName>modelado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6D9F56B9-13D1-1B42-D196-01C14C654D4B" referredColumn="58F8D391-B972-DA95-0BA7-67A87C20B830"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="33727010-296C-C86C-E117-6FE1F369F38E" name="U_FRIENDS_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2020-09-21 23:56:04 UTC</createdTime>
+<ownerDesignName>modelado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DF8E310-C25B-E220-69DA-B8036125E2E7"/>
+<colUsage columnID="8D62BAFA-E3AF-E9D0-7215-6DA34676D2A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB3598BF-B3EE-D831-2825-B83BFFD7688B" name="agrega">
+<createdBy>Usuario</createdBy>
+<createdTime>2020-09-21 23:54:14 UTC</createdTime>
+<ownerDesignName>modelado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DF8E310-C25B-E220-69DA-B8036125E2E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9007A197-F9B5-C698-0F81-7E4BBDDCA979" name="agregado">
+<createdBy>Usuario</createdBy>
+<createdTime>2020-09-21 23:54:53 UTC</createdTime>
+<ownerDesignName>modelado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D62BAFA-E3AF-E9D0-7215-6DA34676D2A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

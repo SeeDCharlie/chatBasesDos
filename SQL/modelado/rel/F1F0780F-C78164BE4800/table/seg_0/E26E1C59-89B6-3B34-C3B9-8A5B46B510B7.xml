@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E26E1C59-89B6-3B34-C3B9-8A5B46B510B7" name="USERS">
+<createdBy>Usuario</createdBy>
+<createdTime>2020-09-21 23:17:51 UTC</createdTime>
+<ownerDesignName>modelado</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="58F8D391-B972-DA95-0BA7-67A87C20B830">
+<createdBy>Usuario</createdBy>
+<createdTime>2020-09-21 23:46:54 UTC</createdTime>
+<ownerDesignName>modelado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="05F39176-50AD-6C77-E1C6-FD251EA30CDB">
+<createdBy>Usuario</createdBy>
+<createdTime>2020-09-21 23:47:29 UTC</createdTime>
+<ownerDesignName>modelado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<ownDataTypeParameters>120,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="BFE61C7B-9653-F8AA-70AC-66107BA74D60">
+<createdBy>Usuario</createdBy>
+<createdTime>2020-09-21 23:51:46 UTC</createdTime>
+<ownerDesignName>modelado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="761FDF01-F8BD-E0DB-DCC6-EAFE3097E3D5">
+<createdBy>Usuario</createdBy>
+<createdTime>2020-09-21 23:52:22 UTC</createdTime>
+<ownerDesignName>modelado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5EDBC90A-D92B-A13D-4D8F-CE6C659E2D49" name="USERS_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2020-09-21 23:46:54 UTC</createdTime>
+<ownerDesignName>modelado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58F8D391-B972-DA95-0BA7-67A87C20B830"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

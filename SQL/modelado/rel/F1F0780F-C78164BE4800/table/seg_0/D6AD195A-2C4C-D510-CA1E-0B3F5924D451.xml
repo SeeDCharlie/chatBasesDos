@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D6AD195A-2C4C-D510-CA1E-0B3F5924D451" name="C_STATES">
+<createdBy>Usuario</createdBy>
+<createdTime>2020-09-21 23:58:16 UTC</createdTime>
+<ownerDesignName>modelado</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="state_id" id="69F35C34-3F9F-EC87-CDF1-171050B439DD">
+<createdBy>Usuario</createdBy>
+<createdTime>2020-09-22 00:01:55 UTC</createdTime>
+<ownerDesignName>modelado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="state" id="1453A896-097E-24AF-1E09-878A81E71050">
+<createdBy>Usuario</createdBy>
+<createdTime>2020-09-22 00:01:55 UTC</createdTime>
+<ownerDesignName>modelado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F6687966-9D14-2B38-CC78-8BC6D3AA06DC" name="C_STATES_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2020-09-22 00:01:55 UTC</createdTime>
+<ownerDesignName>modelado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69F35C34-3F9F-EC87-CDF1-171050B439DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
