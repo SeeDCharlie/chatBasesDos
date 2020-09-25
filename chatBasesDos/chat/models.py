@@ -32,17 +32,16 @@ class usersManager(BaseUserManager):
 
 
 class users(AbstractBaseUser):
-    user_id = models.AutoField(primary_key=True)
+
     email = models.CharField(max_length=120, unique=True)
     name = models.CharField(max_length=50)
     username = models.CharField(max_length=30, default='', unique=True)
-    password = models.CharField(max_length=50)
     usuario_activo = models.BooleanField(default=True)
     usuario_administrador = models.BooleanField(default=False)
     objects = usersManager()
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['username', 'name', 'password' ]
+    REQUIRED_FIELDS = ['username', 'name' ]
 
     def __str__(self):
         return self.email
@@ -70,7 +69,6 @@ class u_states(models.Model):
         
         
 class c_states(models.Model):
-    state_id = models.AutoField(primary_key=True)
     state = models.CharField(max_length=20, blank=True, null=True)
 
     class Meta:
@@ -86,7 +84,6 @@ class chat_users(models.Model):
 
 
 class chats(models.Model):
-    chat_id = models.AutoField(primary_key=True)
     state = models.ForeignKey('c_states', on_delete=models.CASCADE)
 
     class Meta:
@@ -94,7 +91,6 @@ class chats(models.Model):
 
 
 class messages(models.Model):
-    message_id = models.AutoField(primary_key=True)
     chat = models.ForeignKey('chats', on_delete=models.CASCADE)
     user = models.ForeignKey('users', on_delete=models.CASCADE)
     text = models.CharField(max_length=4000, blank=True, null=True)
@@ -106,7 +102,7 @@ class messages(models.Model):
 
 
 class u_friends(models.Model):
-    user = models.OneToOneField('users', on_delete=models.CASCADE, primary_key=True, unique= True, related_name='+')
+    user = models.ForeignKey('users', on_delete=models.CASCADE, related_name='+')
     user_added = models.ForeignKey('users', on_delete=models.CASCADE, related_name='+')
 
     class Meta:
