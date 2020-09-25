@@ -1,12 +1,12 @@
  CREATE TABLE c_states (
-    state_id  INTEGER NOT NULL,
+    state_id  serial,
     state     VARCHAR(20)
 );
 
 ALTER TABLE c_states ADD CONSTRAINT c_states_pk PRIMARY KEY ( state_id );
 
 CREATE TABLE chat_users (
-    user_id  INTEGER NOT NULL,
+    user_id  serial,
     chat_id  INTEGER NOT NULL
 );
 
@@ -18,7 +18,7 @@ CREATE TABLE chats (
 ALTER TABLE chats ADD CONSTRAINT chats_pk PRIMARY KEY ( chat_id );
 
 CREATE TABLE messages (
-    message_id  INTEGER NOT NULL,
+    message_id  serial,
     chat_id     INTEGER NOT NULL,
     user_id     INTEGER NOT NULL,
     text        VARCHAR(4000),
@@ -42,7 +42,7 @@ CREATE TABLE u_states (
 );
 
 CREATE TABLE users (
-    user_id   INTEGER NOT NULL,
+    user_id   serial,
     email     VARCHAR(120) NOT NULL,
     name      VARCHAR(50) NOT NULL,
     password  VARCHAR(50) NOT NULL
