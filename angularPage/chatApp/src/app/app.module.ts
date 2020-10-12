@@ -2,17 +2,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './components/main/app.component';
-import { LoginViewComponent } from './components/login-view/login-view.component';
+import { AppComponent } from './app.component';
+import { LogginComponent } from './component/loggin/loggin.component';
+import { StatesComponent } from './component/states/states.component';
+
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginViewComponent
+    LogginComponent,
+    StatesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

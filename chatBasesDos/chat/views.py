@@ -21,12 +21,12 @@ def index(request):
 
 class api_cStates(APIView):
 
-    permission_classes = [permissions.IsAuthenticated]
+    #permission_classes = [permissions.IsAuthenticated]
                       #IsOwnerOrReadOnly]
 
     def get(self, request):
         states = c_states.objects.all()
-        sz = szc_state(states, many = True)
+        sz = szc_states(states, many = True)
         return Response(sz.data)
     
     def put(self, request):
