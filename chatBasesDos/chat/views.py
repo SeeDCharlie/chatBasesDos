@@ -21,7 +21,7 @@ def index(request):
 
 class api_cStates(APIView):
 
-    #permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAuthenticated]
                       #IsOwnerOrReadOnly]
 
     def get(self, request):
@@ -44,6 +44,7 @@ class api_login(APIView):
     def post(self, request):
         email = request.data['email']
         passw = request.data['password']
+        print("email post : "  + email, "  passw post : "+ passw)
         user = authenticate(email = email, password = passw)
         if user is not None:
             login(request, user)
